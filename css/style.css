@@ -1,0 +1,498 @@
+/* start Global */
+body{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1200px;
+    margin: auto;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h2, h3, h4{
+    font-weight: normal;
+}
+/* end global */
+
+.navbar,
+.header,
+.services,
+.ourteam,
+.testim,
+.our-projects,
+.footer{
+    min-width: 1200px;
+}
+
+/* start navbar */
+.navbar{
+    /* overflow: hidden; */  /* change it with clearfix class*/
+    font-size: 20px;
+    height: 0;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.navbar .brand{
+    float: left;
+    width: 40%;
+    text-transform: uppercase;
+}
+
+.navbar .links{
+    float: left;
+    width: 60%;
+    margin-top: 15px;
+}
+
+.navbar .links li{
+    display: inline-block;
+    /* padding: 10px 15px; */
+    margin: 15px;
+    /* text-transform: uppercase; */
+    letter-spacing: 0.1em;
+    border-bottom: 2px solid transparent;   /* make it transparent because when you active it don't take size */
+    font-weight: bold;
+}
+
+.navbar .links li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .links li.active,
+.navbar .links li:hover
+{
+    color: #1abc9c;
+    border-bottom: 2px solid #1abc9c;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.navbar .links li.active a,
+.navbar .links li a:hover
+{
+    color: #1abc9c;
+    border-bottom: 2px solid #1abc9c;
+    transition: 0.5s;
+    cursor: pointer;
+}
+/* end navbar */
+
+/* start header */
+
+/* end header */
+.header{
+    background-image: url('../images/header1.jpg');
+    background-size: 100% 100%;
+}
+
+.header .overlay{
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bxslider{
+    height: 100%;
+    height: 64%;
+    z-index: 5;
+}
+
+.header .bxslider li{
+    display: block;
+    height: 150px;
+}
+
+.header .bxslider li h2{
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.header .bxslider li h2 span{
+    color: #1abc9c;
+}
+
+.header .bxslider li p{
+    font-size: 20px;
+}
+
+.bx-wrapper{
+    height: 100%;
+    background: none;
+    color: #fff;
+}
+
+.bx-viewport{
+    border: 0;
+    background: none !important;
+    height: 100% !important;
+    text-align: center;
+}
+
+.bx-wrapper .bx-prev {
+    left: 10px;
+    width: 32px; 
+    height: 32px;
+    background: url(../images/right.png) no-repeat 0 -32px;
+}
+
+.bx-wrapper .bx-next {
+    right: 10px;
+    width: 32px; 
+    height: 32px;
+    background: url(../images/right.png) no-repeat -43px -32px;
+} 
+
+/* start services */
+.services{
+    padding: 80px 20px 40px;
+}
+
+.services h2{
+    margin: 0 0 50px;
+}
+
+.services .item{
+    float: left;
+    width: 33.333333%;
+    margin-bottom: 20px;
+}
+
+.services .item i{
+    color: #1abc9c;
+    float: left;
+    width: 17%;
+    margin-right: 8%;
+    margin-top: 20px;
+}
+
+.services .item .info{
+    float: left;
+    width: 70%;
+}
+
+.services .item .info h3{
+    color: #585353;
+    margin-bottom: 20px;
+}
+
+.services .item .info p{
+    margin-top: 0;
+    color: #888;
+}
+
+/* our team */
+.ourteam{
+    padding: 80px 20px 40px;
+}
+
+.ourteam .box{
+    float: left;
+}
+
+.ourteam .box h2{
+    padding: 0 0 15px;
+}
+
+.ourteam .box p{
+    line-height: 1.6;
+    font-size: 14px;
+    color: #888;
+}
+
+.ourteam .box:first-child{
+    width: 35%;
+}
+
+.ourteam .box:not(:first-child){
+    width: 15.25%;
+    margin-left: 1%;
+    /* text-align: right; */
+    position: relative;
+    /* transition: all 50s ease-in-out; */
+}
+
+.ourteam .box:not(:first-child) img{
+    width: 100%;   
+}
+
+.ourteam .box:not(:first-child) .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 188, 156, 0.85);
+    display: none;
+    font-size: 20px;
+    line-height: 186.7px;
+    color: #fff;
+    text-align: center;
+}
+
+.ourteam .box:not(:first-child):hover .overlay{
+    display: block;
+}
+
+/* end our team */
+
+/* end services */
+
+
+
+/* start testimonials */
+.testim{
+    background-image: url('../images/test.jpg');
+    height: 400px;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    position: relative;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.testim .t-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.testim h2{
+    font-size: 40px;
+    margin: 80px 0;
+}
+
+.testim q{
+    font-size: 24px;
+    line-height: 2;
+    color: #d0d0d0;
+    display: block;
+    margin-top: 60px;
+}
+
+.testim p{
+    font-size: 30px;
+    color: #1abc9c;
+}
+
+.testim .slider div{
+    display: none;
+}
+
+.testim .slider .active{
+    display: block;
+}
+
+/* end testimonials */
+
+/* start projects */
+.our-projects{
+    padding: 60px 0;
+}
+/* 
+.our-projects h2{
+    font-weight: normal;
+} */
+
+.our-projects .shuffle li{
+    cursor: pointer;
+}
+
+.our-projects ul{
+    margin-top: 50px;
+}
+
+.our-projects ul li{
+    display: inline-block;
+    border: 2px solid #d4cccc;
+    color: #a7a7a7;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.our-projects ul .selected{
+    background-color: #1abc9c;
+    border: 2px solid #1abc9c;
+    color: #fff;
+}
+
+.our-projects .gallary{
+    margin-top: 50px;
+    width: 100%;
+}
+
+.our-projects .gallary .row > div{
+    width: 32.666666%;
+    float: left;
+    overflow: hidden;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.our-projects .gallary .row > div:nth-child(2){
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.our-projects .gallary .row img{
+    width: 100%;
+}
+
+.our-projects .gallary .row > div .over{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 188, 156, 0.85);
+    font-size: 20px;
+    line-height: 230.9px;
+    color: #fff;
+    text-align: center;
+    display: none;
+}
+
+.our-projects .gallary .row > div:hover .over,
+.our-projects .gallary .row > div:hover .heart{
+    display: block;
+}
+
+.our-projects .gallary .row > div .heart{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    display: none;
+}
+
+.our-projects .mix{
+    display: none;
+}
+
+/* end projects */
+
+/* start footer */
+.footer{
+    background-color: #232323;
+    color: #6c6c6c;
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+.footer .col{
+    width: 25%;
+    float: left;
+}
+
+.footer .col h2{
+    color: #fff;
+    font-size: 20px;
+}
+
+.footer .col p{
+    margin: 50px 0;
+    line-height: 1.6;
+}
+
+.footer .col i{
+    display: inline-block;
+    color: #979797;
+    padding: 10px;
+    border: 1px solid #979797;
+    width: 20px;
+}
+
+.footer .copyright{
+    margin-top: 30px;
+}
+
+.footer .tags span{
+    display: inline-block;
+    padding: 10px;
+    color: #ccc;
+    border: 1px solid #979797;
+    margin-right: 5px;
+    margin-bottom: 7px;
+    border-radius: 3px;
+}
+
+.footer .recent > div{
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.footer .recent > div img{
+    float: left;
+    margin-right: 10px;
+}
+
+.footer .recent > div h4{
+    margin: 10px 0;
+    color: #ccc;
+    font-weight: normal;
+}
+
+.footer .blog ul li{
+    padding: 15px;
+    border-bottom: 1px solid #979797;
+    color: #ccc;
+}
+
+/* end footer */
+
+/* start my framework */
+.clearfix{
+    clear: both;
+}
+
+.speacial-heading{
+    position: relative;
+}
+
+.speacial-heading::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 45px;
+    border-bottom: 2px solid#333;
+}
+
+.Seperator{
+    border: 1px solid #eee;
+    display: block;
+    margin: 40px 0;
+}
+/* end my frame work */
